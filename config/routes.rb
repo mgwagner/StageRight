@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'plays/index'
+
   get 'login/index'
   root to: 'login#index'
 

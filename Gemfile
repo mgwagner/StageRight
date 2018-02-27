@@ -31,6 +31,12 @@ gem 'jquery-rails'
 
 gem 'bootstrap', '~> 4.0.0'
 
+gem 'pdfjs_viewer-rails'
+
+gem 'pdf-reader'
+
+gem 'annotator-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

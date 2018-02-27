@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'plays/index'
-
+  post "plays/upload"
   get 'login/index'
   root to: 'login#index'
   

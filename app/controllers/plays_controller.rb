@@ -14,5 +14,11 @@ class PlaysController < ApplicationController
       @text += page.text
       # puts page.raw_content
   	end
+  	@hasText = false
   end
+
+  def upload
+  	
+  end
+
 end

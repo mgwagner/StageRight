@@ -49,17 +49,24 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="form-group">
-            <label for="CueType">Cue Type</label>
-            <input type="text" class="form-control" id="CueType" placeholder="e.g. LQ, SQ, etc...">
+      <input type="hidden" name="cueNumber" value="1" id="cueNumber">
+        <div id="cueForm">
+            <h4>Cue #1 </h4>
+            <div class="form-group">
+                <label for="CueType">Cue Type</label>
+                <input type="text" class="form-control" id="CueType1" placeholder="e.g. LQ, SQ, etc...">
+            </div>
+            <div class="form-group">
+                <label for="CueLabel">Cue Label</label>
+                <input type="text" class="form-control" id="CueLabel1" placeholder="e.g. 100, A, etc...">
+            </div>
+            <div class="form-group">
+                <label for="CueDescription">Cue Description</label>
+                <input type="text" class="form-control" id="CueDescription1" placeholder="optional">
+            </div>
         </div>
         <div class="form-group">
-            <label for="CueLabel">Cue Label</label>
-            <input type="text" class="form-control" id="CueLabel" placeholder="e.g. 100, A, etc...">
-        </div>
-        <div class="form-group">
-            <label for="CueDescription">Cue Description</label>
-            <input type="text" class="form-control" id="CueDescription" placeholder="optional">
+            <button type="button" class="btn btn-dark btn-sm" id="addCue">Add Another Cue</button>
         </div>
       </div>
       <div class="modal-footer">

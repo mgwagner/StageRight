@@ -39,15 +39,57 @@ $ ->
 				e.target.innerHTML = before + word.substr(0, range.startOffset)+ "<mark>" + str + "</mark>" + word.substr(range.endOffset) + after;
 			else
 				e.target.innerHTML = before + word.substr(0, range.startOffset)+ "<mark>" + str + "</mark>" + word.substr(range.endOffset - 1) + after;
+
+		$("#cueForm")[0].innerHTML = '<div class="form-break"> </div> <h4>Cue #' + 1 + '</h4><div class="form-group">
+		        <label for="CueType">Cue Type</label>
+		        <input type="text" class="form-control" id="CueType' + (1) + '" placeholder="e.g. LQ, SQ, etc...">
+		    </div>
+		    <div class="form-group">
+		        <label for="CueLabel">Cue Label</label>
+		        <input type="text" class="form-control" id="CueLabel' + (1) + '" placeholder="e.g. 100, A, etc...">
+		    </div>
+		    <div class="form-group">
+		        <label for="CueDescription">Cue Description</label>
+		        <input type="text" class="form-control" id="CueDescription' + (1) + '" placeholder="optional">
+		    </div>';
+		$("#cueNumber").val(1);
 		$("#Cueinput").modal("toggle");
 
 	$("#submit").on "click", (e) ->
 		$("#Cueinput").modal("toggle");
-		alert("be alert, the world needs more lerts" + " " + $("#CueType").val() + " " + $("#CueLabel").val() + " " + $("#CueDescription").val());
-		$(".whatWeJustDid")[0].innerHTML = $(".whatWeJustDid")[0].innerHTML + "<p class=\"cues\">" +  $("#CueType").val() + " " + $("#CueLabel").val() + " " + $("#CueDescription").val() + "</p>";
-		console.log($(".whatWeJustDid")[0]);
+		cueNumber = parseInt($("#cueNumber").val());
+		newString = $(".whatWeJustDid")[0].innerHTML;
+		for i in [1...cueNumber + 1]
+			newString += "<p class=\"cues\"> " +  $("#CueType" + i).val() + " " + $("#CueLabel" + i).val() + " " + "</p>";
+		$(".whatWeJustDid")[0].innerHTML = newString;
 		$(".whatWeJustDid")[0].className = "underliner";
 
+	$("#addCue").on "click", (e) ->
+		cueNumber = parseInt($("#cueNumber").val());
+		$("#cueNumber").val(cueNumber + 1);
+		cueTypes = [];
+		cueLabels = [];
+		cueDescriptions = [];
+		for i in [1...cueNumber + 1]
+			cueTypes.push($("#CueType" + i).val());
+			cueLabels.push($("#CueLabel" + i).val());
+			cueDescriptions.push($("#CueDescription" + i).val());
+		$("#cueForm")[0].innerHTML = $("#cueForm")[0].innerHTML + '<div class="form-break"> </div> <h4>Cue #' + $("#cueNumber").val() + '</h4><div class="form-group">
+                <label for="CueType">Cue Type</label>
+                <input type="text" class="form-control" id="CueType' + (cueNumber + 1) + '" placeholder="e.g. LQ, SQ, etc...">
+            </div>
+            <div class="form-group">
+                <label for="CueLabel">Cue Label</label>
+                <input type="text" class="form-control" id="CueLabel' + (cueNumber + 1) + '" placeholder="e.g. 100, A, etc...">
+            </div>
+            <div class="form-group">
+                <label for="CueDescription">Cue Description</label>
+                <input type="text" class="form-control" id="CueDescription' + (cueNumber + 1) + '" placeholder="optional">
+            </div>';
+		for i in [1...cueNumber+1]
+			$("#CueType" + i).val(cueTypes[i-1]);
+			$("#CueLabel" + i).val(cueLabels[i-1]);
+			$("#CueDescription" + i).val(cueDescriptions[i-1]);
 
 
 

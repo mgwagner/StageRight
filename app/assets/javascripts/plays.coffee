@@ -1,8 +1,9 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+# You can use CoffeeScript in this file: http://coffeescript.org
 $ ->
 	$(".clickable p").on "click", (e) ->
+
 		s = window.getSelection();
 		range = s.getRangeAt(0);
 		node = s.anchorNode;
@@ -33,14 +34,16 @@ $ ->
 		locationOfWord = e.target.innerHTML.lastIndexOf(word);
 		before = e.target.innerHTML.substr(0, locationOfWord);
 		after = e.target.innerHTML.substr(locationOfWord + word.length);
-		e.currentTarget.className = "underliner whatWeJustDid";
+
 		if (e.currentTarget.innerHTML.search("<mark>" + str + "</mark>") == -1)
 			if range.endOffset = word.length
-				e.target.innerHTML = before + word.substr(0, range.startOffset)+ "<mark>" + str + "</mark>" + word.substr(range.endOffset) + after;
+				window.storingThing1 = e.target;
+				window.storingThing2 = before + word.substr(0, range.startOffset)+ "<mark>" + str + "</mark>" + word.substr(range.endOffset) + after;
 			else
-				e.target.innerHTML = before + word.substr(0, range.startOffset)+ "<mark>" + str + "</mark>" + word.substr(range.endOffset - 1) + after;
+				window.storingThing1  = e.target;
+				window.storingThing2 = before + word.substr(0, range.startOffset)+ "<mark>" + str + "</mark>" + word.substr(range.endOffset - 1) + after;
 
-		$("#cueForm")[0].innerHTML = '<div class="form-break"> </div> <h4>Cue #' + 1 + '</h4><div class="form-group">
+		$("#cueForm")[0].innerHTML = '<h4>Cue #' + 1 + '</h4><div class="form-group">
 		        <label for="CueType">Cue Type</label>
 		        <input type="text" class="form-control" id="CueType' + (1) + '" placeholder="e.g. LQ, SQ, etc...">
 		    </div>
@@ -58,11 +61,14 @@ $ ->
 	$("#submit").on "click", (e) ->
 		$("#Cueinput").modal("toggle");
 		cueNumber = parseInt($("#cueNumber").val());
-		newString = $(".whatWeJustDid")[0].innerHTML;
+		newString = window.storingThing2;
 		for i in [1...cueNumber + 1]
-			newString += "<p class=\"cues\"> " +  $("#CueType" + i).val() + " " + $("#CueLabel" + i).val() + " " + "</p>";
-		$(".whatWeJustDid")[0].innerHTML = newString;
-		$(".whatWeJustDid")[0].className = "underliner";
+			newString += "<p class=\"cues\"> " +  $("#CueType" + (cueNumber + 1 - i)).val() + " " + $("#CueLabel" + (cueNumber + 1 - i)).val() + " " + "</p>";
+		window.storingThing1.innerHTML = window.storingThing2;
+		window.storingThing1.innerHTML = newString;
+		console.log($(".whatWeJustDid"));
+		console.log(newString);
+		window.storingThing1.className = "underliner";
 
 	$("#addCue").on "click", (e) ->
 		cueNumber = parseInt($("#cueNumber").val());

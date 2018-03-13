@@ -16,4 +16,4 @@
 //= require_tree .
 //= require popper
 //= require bootstrap
-//= require annotator
+//= require jquery-fileupload

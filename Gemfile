@@ -35,7 +35,8 @@ gem 'pdfjs_viewer-rails'
 
 gem 'pdf-reader'
 
-gem 'annotator-rails'
+gem 'jquery-fileupload-rails'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :notes
+  resources :scripts
+  resources :users
   get 'plays/index'
   post "plays/upload"
   get 'login/index'

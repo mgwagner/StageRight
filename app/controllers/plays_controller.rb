@@ -39,4 +39,8 @@ class PlaysController < ApplicationController
       redirect_to plays_index_path #need to change this later
     end
   end
+
+  def cuesDB
+    puts "something here so that we can see its actually doing something"
+  end
 end

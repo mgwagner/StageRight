@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users
   get 'plays/index'
   post "plays/upload"
+  post 'plays/cuesDB'
   get 'login/index'
   root to: 'login#index'
   

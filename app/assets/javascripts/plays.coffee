@@ -43,6 +43,12 @@ $ ->
 				window.storingThing1  = e.target;
 				window.storingThing2 = before + word.substr(0, range.startOffset)+ "<mark>" + str + "</mark>" + word.substr(range.endOffset - 1) + after;
 
+		for i in [0...e.target.parentElement.children.length]
+			if e.target.parentElement.children[i] == e.target
+				window.CueLineNum = i;
+		
+		window.Cuelocation = range.startOffset;
+
 		$("#cueForm")[0].innerHTML = '<h4>Cue #' + 1 + '</h4><div class="form-group">
 		        <label for="CueType">Cue Type</label>
 		        <input type="text" class="form-control" id="CueType' + (1) + '" placeholder="e.g. LQ, SQ, etc...">
@@ -62,13 +68,28 @@ $ ->
 		$("#Cueinput").modal("toggle");
 		cueNumber = parseInt($("#cueNumber").val());
 		newString = window.storingThing2;
+		cueTypeArray = [];
+		cueLabelArray = [];
+		cueDescriptionArray = [];
 		for i in [1...cueNumber + 1]
 			newString += "<p class=\"cues\"> " +  $("#CueType" + (cueNumber + 1 - i)).val() + " " + $("#CueLabel" + (cueNumber + 1 - i)).val() + " " + "</p>";
+			cueTypeArray.push($("#CueType" + (cueNumber + 1 - i)).val());
+			cueLabelArray.push($("#CueLabel" + (cueNumber + 1 - i)).val())
+			cueDescriptionArray.push($("#CueDescription" + (cueNumber + 1 - i)).val());
 		window.storingThing1.innerHTML = window.storingThing2;
 		window.storingThing1.innerHTML = newString;
 		console.log($(".whatWeJustDid"));
 		console.log(newString);
 		window.storingThing1.className = "underliner";
+
+		$.post '/plays/cuesDB',
+			cueType: cueTypeArray
+			cueLabel: cueLabelArray
+			cueDescription: cueDescriptionArray
+			location: window.Cuelocation
+			cueLineNum: window.CueLineNum
+			(data) -> console.log(data)
+
 
 	$("#addCue").on "click", (e) ->
 		cueNumber = parseInt($("#cueNumber").val());

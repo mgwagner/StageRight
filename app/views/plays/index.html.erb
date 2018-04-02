@@ -12,7 +12,7 @@
 <div class="container">
     <% if @hasText %>
 	   <div class="page-header text-center">
-		  <h1>Name of Project</h1>
+		  <h1><%= simple_format(@projectName)%></h1>
 	   </div>
 	   <div class="clickable">
 		  <%= simple_format(@text) %>
@@ -26,7 +26,7 @@
             <%= label_tag(:s, "Upload Script") %>
             <br>
             <label class="btn btn-secondary" for="my-file-selector">
-                <input id="my-file-selector" type="file" style="display:none;"> Choose File
+                <input id="my-file-selector" name="file" type="file" style="display:none;"> Choose File
             </label>
         </div>
         <div class="form-group">

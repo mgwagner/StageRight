@@ -173,3 +173,291 @@ Processing by PlaysController#index as HTML
 Completed 200 OK in 14392ms (Views: 14015.3ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddScriptFileToScripts (20180323230714)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "scripts" ADD "filename" text[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180323230714"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:15:45 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 770ms (Views: 167.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:15:55 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EFRk555GmWma6NsKpE4QEVy5age4E6y1wGtgQbTtjIZcBqacKP4WL49hriDUT09iyRZ20jWWXN4DXxPF1gWvDA==", "q"=>"", "commit"=>"Upload"}
+No template found for PlaysController#upload, rendering head :no_content
+Completed 204 No Content in 272ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:17:34 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 954ms (Views: 120.4ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:17:38 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Ln6zBGydDoF3dHbs1USu69L/iE1lpEnwq+5qyAa86Ko6zi3pwr7fBBUpPHDVE3IOuTi9LgTYUwBm8ovQvLQKA==", "q"=>"", "commit"=>"Upload"}
+No template found for PlaysController#upload, rendering head :no_content
+Completed 204 No Content in 916ms
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:21:49 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 423ms (Views: 97.3ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:22:23 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91pq778pcjiRYEJ1E6lEtfLt7eFOCFFI8lTbjzTDpge7CKiUCZH9foTpN19jqBvGZ0LxNMONoSMxYKgLViuFjQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcae9f78a30 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-kxib62.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial Adaptation", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/"Home Burial" Adaptation.pdf):
+  
+app/controllers/plays_controller.rb:23:in `initialize'
+app/controllers/plays_controller.rb:23:in `open'
+app/controllers/plays_controller.rb:23:in `upload'
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:23:19 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91pq778pcjiRYEJ1E6lEtfLt7eFOCFFI8lTbjzTDpge7CKiUCZH9foTpN19jqBvGZ0LxNMONoSMxYKgLViuFjQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaeae5c1a0 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-deixln.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial Adaptation", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/"Home Burial" Adaptation.pdf):
+  
+app/controllers/plays_controller.rb:23:in `initialize'
+app/controllers/plays_controller.rb:23:in `open'
+app/controllers/plays_controller.rb:23:in `upload'
+Started GET "/plays" for 127.0.0.1 at 2018-03-23 18:23:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/plays"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:23:26 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 615ms (Views: 135.4ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:23:41 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LpZWsaWtCvP2fm3s3azdbeWiG4iQ/3dQnxraXwMzQytixJTKExWFteP3GMatrYIecA0HXR16hztcLqnbYdtgoQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaf0c6c1f0 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-dcs6ks.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial Adaptation", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/"Home Burial" Adaptation.pdf):
+  
+app/controllers/plays_controller.rb:23:in `initialize'
+app/controllers/plays_controller.rb:23:in `open'
+app/controllers/plays_controller.rb:23:in `upload'
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:27:23 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 612ms (Views: 85.5ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:27:33 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zviQouF6SuiTJAs8kj+m1ZRKAeeRhoBayvTgMrKLnLyCqlLZV8LFroatfhbiPvmmAeUdMhwDcDEJwJO20GO/Ng==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaf1a13038 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-1egeedp.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1HB):
+  
+app/controllers/plays_controller.rb:23:in `initialize'
+app/controllers/plays_controller.rb:23:in `open'
+app/controllers/plays_controller.rb:23:in `upload'
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:33:21 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zviQouF6SuiTJAs8kj+m1ZRKAeeRhoBayvTgMrKLnLyCqlLZV8LFroatfhbiPvmmAeUdMhwDcDEJwJO20GO/Ng==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaef51d0a8 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-1a0o54f.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1HB):
+  
+app/controllers/plays_controller.rb:24:in `initialize'
+app/controllers/plays_controller.rb:24:in `open'
+app/controllers/plays_controller.rb:24:in `upload'
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:33:24 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 738ms (Views: 114.5ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:33:32 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hBNG9aT5dtQe1Tvraj9xWxsrJN7fMT+U8RfssHUtavvIQYSOEkH5kgtcTsEaPi4ojoQ4C1K0z/8yI580F8VJcQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaf0a3e888 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-1f7291m.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1HB):
+  
+app/controllers/plays_controller.rb:24:in `initialize'
+app/controllers/plays_controller.rb:24:in `open'
+app/controllers/plays_controller.rb:24:in `upload'
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-27 18:11:02 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (464.6ms)
+Completed 200 OK in 1233ms (Views: 600.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-03-27 18:11:15 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"53OUMtXrzqUkcgFI9IVWhm8hhI0EgjjKdr8+Wk/nLL3oo2uQ4hE2cqegDxvo3gCnkl/jSHuknKmlO66jamEPYg==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fc34f84adb8 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180327-989-1hdb2vu.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"f", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1f):
+  
+app/controllers/plays_controller.rb:24:in `initialize'
+app/controllers/plays_controller.rb:24:in `open'
+app/controllers/plays_controller.rb:24:in `upload'
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:01:10 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (367.4ms)
+Completed 200 OK in 843ms (Views: 530.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:01:22 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w2g/eZNJc6cKj1TG4ita3lkcrHT0N1hrKGLp+niJKYZDAChvkwcFGYOm1rMsIBV1UutgRl4h6XXvp6SW8Pf7wQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007f85c3454d90 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-6649-1rbv5pp.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"d", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1d):
+  
+app/controllers/plays_controller.rb:24:in `initialize'
+app/controllers/plays_controller.rb:24:in `open'
+app/controllers/plays_controller.rb:24:in `upload'
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:21:29 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (525.1ms)
+Completed 200 OK in 1465ms (Views: 812.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:21:53 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VGLzYB7DY34XrXpIH+IHzZhHjv8x3Ok8fSEE/FoIsvvUCuR2Ho0VwJ6E+D3R6Uhmk7BCzZvKWCK65EmQ0nZgvA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd3ff042ec0 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-7019-14ibe5s.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"fg", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1fg):
+  
+app/controllers/plays_controller.rb:24:in `initialize'
+app/controllers/plays_controller.rb:24:in `open'
+app/controllers/plays_controller.rb:24:in `upload'
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:23:48 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 905ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:23:57 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qlbADOTQSzFLaunKnjS6tvFZE32WNoE0JY6n5+UHeNAqPtca5J49j8JDa79QP/Ud+q7fTzwgMCriS+qLbXmqlw==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd3feca3f30 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-7019-6mr3te.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial", "commit"=>"Upload"}
+No template found for PlaysController#upload, rendering head :no_content
+Completed 204 No Content in 295ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:35:48 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 684ms (Views: 161.9ms)
+
+
+Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:36:01 -0500
+Processing by PlaysController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ebex30B9LXWaFzEx7KSorr64fFaD+nU+0aR/7gGQ5y/536bJQDNbyxM+s0Qir+cFtU+wZCnsxCAWYTKCie41aA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd3fb5dfb70 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-7019-uasi8u.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB2", "commit"=>"Upload"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "scripts" ("script_name", "user_id", "created_at", "updated_at", "filename") VALUES (?, ?, ?, ?, ?)[0m  [["script_name", "HB2"], ["user_id", 1], ["created_at", "2018-04-02 22:36:01.983380"], ["updated_at", "2018-04-02 22:36:01.983380"], ["filename", "1HB2"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/plays/index
+Completed 302 Found in 247ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:36:01 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 853ms (Views: 143.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:42:58 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mScript Load (0.1ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 3059ms (Views: 157.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:45:30 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mScript Load (0.4ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 3159ms (Views: 152.9ms | ActiveRecord: 1.9ms)
+
+

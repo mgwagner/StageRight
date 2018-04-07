@@ -173,329 +173,684 @@ Processing by PlaysController#index as HTML
 Completed 200 OK in 14392ms (Views: 14015.3ms | ActiveRecord: 0.0ms)
 
 
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to AddScriptFileToScripts (20180323230714)
-  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "scripts" ADD "filename" text[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180323230714"]]
-  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:15:45 -0500
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/plays/index" for 127.0.0.1 at 2018-03-29 12:00:16 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PlaysController#index as HTML
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (3.2ms)
-Completed 200 OK in 770ms (Views: 167.6ms | ActiveRecord: 0.0ms)
+  Rendered plays/index.html.erb within layouts/application (35091.6ms)
+Completed 200 OK in 36176ms (Views: 35713.3ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:15:55 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EFRk555GmWma6NsKpE4QEVy5age4E6y1wGtgQbTtjIZcBqacKP4WL49hriDUT09iyRZ20jWWXN4DXxPF1gWvDA==", "q"=>"", "commit"=>"Upload"}
-No template found for PlaysController#upload, rendering head :no_content
-Completed 204 No Content in 272ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:17:34 -0500
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-01 13:20:16 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PlaysController#index as HTML
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (2.7ms)
-Completed 200 OK in 954ms (Views: 120.4ms)
+  Rendered plays/index.html.erb within layouts/application (4083.0ms)
+Completed 200 OK in 6845ms (Views: 6289.0ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:17:38 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Ln6zBGydDoF3dHbs1USu69L/iE1lpEnwq+5qyAa86Ko6zi3pwr7fBBUpPHDVE3IOuTi9LgTYUwBm8ovQvLQKA==", "q"=>"", "commit"=>"Upload"}
-No template found for PlaysController#upload, rendering head :no_content
-Completed 204 No Content in 916ms
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:21:49 -0500
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-01 13:23:30 -0500
 Processing by PlaysController#index as HTML
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (4.9ms)
-Completed 200 OK in 423ms (Views: 97.3ms)
+  Rendered plays/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 568ms (Views: 312.6ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:22:23 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91pq778pcjiRYEJ1E6lEtfLt7eFOCFFI8lTbjzTDpge7CKiUCZH9foTpN19jqBvGZ0LxNMONoSMxYKgLViuFjQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcae9f78a30 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-kxib62.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial Adaptation", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 1ms
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/"Home Burial" Adaptation.pdf):
-  
-app/controllers/plays_controller.rb:23:in `initialize'
-app/controllers/plays_controller.rb:23:in `open'
-app/controllers/plays_controller.rb:23:in `upload'
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:23:19 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91pq778pcjiRYEJ1E6lEtfLt7eFOCFFI8lTbjzTDpge7CKiUCZH9foTpN19jqBvGZ0LxNMONoSMxYKgLViuFjQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaeae5c1a0 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-deixln.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial Adaptation", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 1ms
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/"Home Burial" Adaptation.pdf):
-  
-app/controllers/plays_controller.rb:23:in `initialize'
-app/controllers/plays_controller.rb:23:in `open'
-app/controllers/plays_controller.rb:23:in `upload'
-Started GET "/plays" for 127.0.0.1 at 2018-03-23 18:23:23 -0500
-  
-ActionController::RoutingError (No route matches [GET] "/plays"):
-  
-actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
-web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
-rack (2.0.4) lib/rack/method_override.rb:22:in `call'
-rack (2.0.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
-rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
-railties (5.1.5) lib/rails/engine.rb:522:in `call'
-puma (3.11.3) lib/puma/configuration.rb:225:in `call'
-puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
-puma (3.11.3) lib/puma/server.rb:438:in `process_client'
-puma (3.11.3) lib/puma/server.rb:302:in `block in run'
-puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:23:26 -0500
-Processing by PlaysController#index as HTML
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (2.5ms)
-Completed 200 OK in 615ms (Views: 135.4ms)
-
-
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:23:41 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LpZWsaWtCvP2fm3s3azdbeWiG4iQ/3dQnxraXwMzQytixJTKExWFteP3GMatrYIecA0HXR16hztcLqnbYdtgoQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaf0c6c1f0 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-dcs6ks.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial Adaptation", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 2ms
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/"Home Burial" Adaptation.pdf):
-  
-app/controllers/plays_controller.rb:23:in `initialize'
-app/controllers/plays_controller.rb:23:in `open'
-app/controllers/plays_controller.rb:23:in `upload'
-Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:27:23 -0500
-Processing by PlaysController#index as HTML
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (4.5ms)
-Completed 200 OK in 612ms (Views: 85.5ms)
-
-
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:27:33 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zviQouF6SuiTJAs8kj+m1ZRKAeeRhoBayvTgMrKLnLyCqlLZV8LFroatfhbiPvmmAeUdMhwDcDEJwJO20GO/Ng==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaf1a13038 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-1egeedp.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 2ms
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1HB):
-  
-app/controllers/plays_controller.rb:23:in `initialize'
-app/controllers/plays_controller.rb:23:in `open'
-app/controllers/plays_controller.rb:23:in `upload'
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:33:21 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zviQouF6SuiTJAs8kj+m1ZRKAeeRhoBayvTgMrKLnLyCqlLZV8LFroatfhbiPvmmAeUdMhwDcDEJwJO20GO/Ng==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaef51d0a8 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-1a0o54f.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 1ms
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1HB):
-  
-app/controllers/plays_controller.rb:24:in `initialize'
-app/controllers/plays_controller.rb:24:in `open'
-app/controllers/plays_controller.rb:24:in `upload'
-Started GET "/plays/index" for 127.0.0.1 at 2018-03-23 18:33:24 -0500
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-01 13:24:40 -0500
 Processing by PlaysController#index as HTML
   Rendering plays/index.html.erb within layouts/application
   Rendered plays/index.html.erb within layouts/application (7.0ms)
-Completed 200 OK in 738ms (Views: 114.5ms)
+Completed 200 OK in 614ms (Views: 321.0ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-23 18:33:32 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hBNG9aT5dtQe1Tvraj9xWxsrJN7fMT+U8RfssHUtavvIQYSOEkH5kgtcTsEaPi4ojoQ4C1K0z/8yI580F8VJcQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fcaf0a3e888 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180323-49417-1f7291m.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 2ms
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1HB):
-  
-app/controllers/plays_controller.rb:24:in `initialize'
-app/controllers/plays_controller.rb:24:in `open'
-app/controllers/plays_controller.rb:24:in `upload'
-Started GET "/plays/index" for 127.0.0.1 at 2018-03-27 18:11:02 -0500
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-01 13:25:04 -0500
 Processing by PlaysController#index as HTML
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (464.6ms)
-Completed 200 OK in 1233ms (Views: 600.0ms | ActiveRecord: 0.0ms)
+  Rendered plays/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 637ms (Views: 336.7ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/upload" for 127.0.0.1 at 2018-03-27 18:11:15 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"53OUMtXrzqUkcgFI9IVWhm8hhI0EgjjKdr8+Wk/nLL3oo2uQ4hE2cqegDxvo3gCnkl/jSHuknKmlO66jamEPYg==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fc34f84adb8 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180327-989-1hdb2vu.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"f", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-01 13:25:32 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 572ms (Views: 286.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-01 13:32:13 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 438ms (Views: 312.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:59:37 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (2720.3ms)
+Completed 200 OK in 4871ms (Views: 4480.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/login" for 127.0.0.1 at 2018-04-02 19:00:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/plays/login"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/plays/login" for 127.0.0.1 at 2018-04-02 19:00:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/plays/login"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/plays/login" for 127.0.0.1 at 2018-04-02 19:07:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/plays/login"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 19:07:49 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 578ms (Views: 297.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/login" for 127.0.0.1 at 2018-04-02 19:07:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/plays/login"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:08:43 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 316ms (Views: 290.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:08:57 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (34.0ms)
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 0.0ms)
 
 
   
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1f):
+ActionView::Template::Error (No route matches {:action=>"upload", :controller=>"login"}):
+    21:         <div class="page-header text-center">
+    22:             <h1>New Project</h1>
+    23:         </div>
+    24:         <%= form_tag({action: :upload}, multipart: true) do %>
+    25:         <div class="form-group">
+    26:             <%= label_tag(:s, "Upload Script") %>
+    27:             <br>
   
-app/controllers/plays_controller.rb:24:in `initialize'
-app/controllers/plays_controller.rb:24:in `open'
-app/controllers/plays_controller.rb:24:in `upload'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:01:10 -0500
+app/views/login/index.html.erb:24:in `_app_views_login_index_html_erb___754499260_99836064'
+Started POST "/__web_console/repl_sessions/6cc7c31cbd9be54e80844aab87e545dd/trace" for 127.0.0.1 at 2018-04-02 19:09:36 -0500
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:11:56 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 17454ms (Views: 17429.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:12:25 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7642ms (Views: 7606.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:13:37 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 337ms (Views: 312.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:13:41 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 355ms (Views: 312.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:13:53 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 352ms (Views: 317.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:13:55 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 343ms (Views: 305.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:14:01 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 364ms (Views: 331.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:14:03 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 375ms (Views: 312.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:14:09 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 364ms (Views: 328.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-02 19:14:19 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 344ms (Views: 298.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 19:14:29 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 547ms (Views: 298.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-03 15:00:07 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (4472.7ms)
+Completed 200 OK in 6724ms (Views: 6133.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:16:55 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4889.1ms)
+Completed 200 OK in 8121ms (Views: 8042.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:17:17 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 322ms (Views: 294.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:26:26 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 348ms (Views: 309.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:26:33 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 343ms (Views: 309.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-03 19:26:59 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 896ms (Views: 320.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-03 19:29:59 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 589ms (Views: 302.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-03 19:30:07 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 546ms (Views: 291.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-03 19:30:19 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 566ms (Views: 306.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:33:33 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 347ms (Views: 298.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:35:09 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1999ms (Views: 1972.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:35:12 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 349ms (Views: 315.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:35:43 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:36:00 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 18686ms (Views: 18652.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 7913ms (Views: 7885.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:36:25 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7987ms (Views: 7954.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:36:47 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 409ms (Views: 372.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:36:57 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7611ms (Views: 7577.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 19:37:16 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7533ms (Views: 7498.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-03 19:37:44 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 604ms (Views: 289.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-03 19:38:16 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 8407ms (Views: 8091.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-05 12:14:39 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4821.4ms)
+Completed 200 OK in 6587ms (Views: 6512.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 12:16:27 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 353ms (Views: 314.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 12:16:34 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 321ms (Views: 280.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/inde" for 127.0.0.1 at 2018-04-05 12:16:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/login/inde"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 12:16:53 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 346ms (Views: 303.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 19:05:30 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (2577.0ms)
+Completed 200 OK in 4266ms (Views: 4220.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 19:14:15 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 464ms (Views: 420.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 19:14:18 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 406ms (Views: 353.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 19:20:52 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 451ms (Views: 402.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 19:20:56 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 409ms (Views: 380.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-05 19:21:05 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 436ms (Views: 382.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 02:30:33 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (6767.5ms)
+Completed 200 OK in 9997ms (Views: 9784.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 02:30:55 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 326ms (Views: 302.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 02:31:31 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 307ms (Views: 276.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-07 02:31:35 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 301ms (Views: 277.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-07 02:33:06 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 330ms (Views: 298.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/index" for 127.0.0.1 at 2018-04-07 02:33:26 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 369ms (Views: 312.4ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/login.scss"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddClearanceToUsers (20180407075634)
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" varchar(128)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mALTER TABLE "users" ADD "confirmation_token" varchar(128)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_token" varchar(128)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (27.7ms)[0m  [1m[35mCREATE  INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT id FROM users WHERE remember_token IS NULL[0m
+  [1m[35m (2.0ms)[0m  [1m[33m        UPDATE users
+        SET remember_token = '43b2776661106e78587cd21dd2f3f170ad303f4b'
+        WHERE id = '1'
+[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180407075634"]]
+  [1m[35m (156.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (22.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by PlaysController#index as HTML
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (367.4ms)
-Completed 200 OK in 843ms (Views: 530.2ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:01:22 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w2g/eZNJc6cKj1TG4ita3lkcrHT0N1hrKGLp+niJKYZDAChvkwcFGYOm1rMsIBV1UutgRl4h6XXvp6SW8Pf7wQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007f85c3454d90 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-6649-1rbv5pp.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"d", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
-
-
-  
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1d):
-  
-app/controllers/plays_controller.rb:24:in `initialize'
-app/controllers/plays_controller.rb:24:in `open'
-app/controllers/plays_controller.rb:24:in `upload'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:21:29 -0500
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by PlaysController#index as HTML
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (525.1ms)
-Completed 200 OK in 1465ms (Views: 812.9ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:21:53 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VGLzYB7DY34XrXpIH+IHzZhHjv8x3Ok8fSEE/FoIsvvUCuR2Ho0VwJ6E+D3R6Uhmk7BCzZvKWCK65EmQ0nZgvA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd3ff042ec0 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-7019-14ibe5s.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"fg", "commit"=>"Upload"}
-Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/login/index" for 127.0.0.1 at 2018-04-07 03:11:47 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (2192.4ms)
+Completed 200 OK in 3697ms (Views: 3634.4ms | ActiveRecord: 0.0ms)
 
 
   
-Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/public/uploads/1fg):
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/login.scss"):
   
-app/controllers/plays_controller.rb:24:in `initialize'
-app/controllers/plays_controller.rb:24:in `open'
-app/controllers/plays_controller.rb:24:in `upload'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:23:48 -0500
-Processing by PlaysController#index as HTML
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (3.3ms)
-Completed 200 OK in 905ms (Views: 106.5ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:23:57 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qlbADOTQSzFLaunKnjS6tvFZE32WNoE0JY6n5+UHeNAqPtca5J49j8JDa79QP/Ud+q7fTzwgMCriS+qLbXmqlw==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd3feca3f30 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-7019-6mr3te.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"Home Burial", "commit"=>"Upload"}
-No template found for PlaysController#upload, rendering head :no_content
-Completed 204 No Content in 295ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:35:48 -0500
-Processing by PlaysController#index as HTML
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (5.1ms)
-Completed 200 OK in 684ms (Views: 161.9ms)
-
-
-Started POST "/plays/upload" for 127.0.0.1 at 2018-04-02 17:36:01 -0500
-Processing by PlaysController#upload as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ebex30B9LXWaFzEx7KSorr64fFaD+nU+0aR/7gGQ5y/536bJQDNbyxM+s0Qir+cFtU+wZCnsxCAWYTKCie41aA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd3fb5dfb70 @tempfile=#<Tempfile:/var/folders/4t/bwrw87sn6vb4qks4lhrbw09h0000gn/T/RackMultipart20180402-7019-uasi8u.pdf>, @original_filename="\"Home Burial\" Adaptation.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"%22Home Burial%22 Adaptation.pdf\"\r\nContent-Type: application/pdf\r\n">, "q"=>"HB2", "commit"=>"Upload"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "scripts" ("script_name", "user_id", "created_at", "updated_at", "filename") VALUES (?, ?, ?, ?, ?)[0m  [["script_name", "HB2"], ["user_id", 1], ["created_at", "2018-04-02 22:36:01.983380"], ["updated_at", "2018-04-02 22:36:01.983380"], ["filename", "1HB2"]]
-  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
-Redirected to http://localhost:3000/plays/index
-Completed 302 Found in 247ms (ActiveRecord: 6.5ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:36:01 -0500
-Processing by PlaysController#index as HTML
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (6.5ms)
-Completed 200 OK in 853ms (Views: 143.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:42:58 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.1ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (15.8ms)
-Completed 200 OK in 3059ms (Views: 157.7ms | ActiveRecord: 1.4ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:45:30 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.4ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (7.5ms)
-Completed 200 OK in 3159ms (Views: 152.9ms | ActiveRecord: 1.9ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:54:23 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.2ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (4.5ms)
-Completed 200 OK in 4189ms (Views: 1373.7ms | ActiveRecord: 1.3ms)
-
-
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 17:54:37 -0500
-  
-AbstractController::ActionNotFound (The action 'cuesDB' could not be found for PlaysController):
-  
-actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
-actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
-actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
-actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
-rack (2.0.4) lib/rack/etag.rb:25:in `call'
-rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
-rack (2.0.4) lib/rack/head.rb:12:in `call'
-rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
-rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
-activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
-activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
-actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -507,7 +862,12 @@ activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagge
 activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
 activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
 railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
 actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
 actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
 rack (2.0.4) lib/rack/method_override.rb:22:in `call'
@@ -523,32 +883,64 @@ puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.3) lib/puma/server.rb:438:in `process_client'
 puma (3.11.3) lib/puma/server.rb:302:in `block in run'
 puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 17:55:48 -0500
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:12:18 -0500
+Processing by Clearance::UsersController#new as HTML
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
   
-AbstractController::ActionNotFound (The action 'cuesDB' could not be found for PlaysController):
+LoadError (cannot load such file -- bcrypt_ext):
   
-actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
-actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
-actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
-actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
-rack (2.0.4) lib/rack/etag.rb:25:in `call'
-rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
-rack (2.0.4) lib/rack/head.rb:12:in `call'
-rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
-rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
-activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
-activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
-actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+app/models/user.rb:2:in `include'
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 03:12:22 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (60.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (225.9ms)
+Completed 200 OK in 706ms (Views: 705.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:17:13 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (285.0ms)
+Completed 500 Internal Server Error in 771ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_59276760'
+Started GET "/" for 127.0.0.1 at 2018-04-07 03:26:48 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (483.6ms)
+Completed 200 OK in 1033ms (Views: 988.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 03:26:59 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 346ms (Views: 321.3ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/login.scss"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -560,7 +952,12 @@ activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagge
 activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
 activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
 railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
 actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
 actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
 rack (2.0.4) lib/rack/method_override.rb:22:in `call'
@@ -576,140 +973,99 @@ puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.3) lib/puma/server.rb:438:in `process_client'
 puma (3.11.3) lib/puma/server.rb:302:in `block in run'
 puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:55:50 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.6ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (12.2ms)
-Completed 200 OK in 3643ms (Views: 116.7ms | ActiveRecord: 6.9ms)
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 03:27:08 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 513ms (Views: 512.5ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 17:56:30 -0500
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:27:16 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (287.0ms)
+Completed 500 Internal Server Error in 508ms (ActiveRecord: 0.0ms)
+
+
   
-AbstractController::ActionNotFound (The action 'cuesDB' could not be found for PlaysController):
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
   
-actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
-actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
-actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
-actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
-actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
-actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
-rack (2.0.4) lib/rack/etag.rb:25:in `call'
-rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
-rack (2.0.4) lib/rack/head.rb:12:in `call'
-rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
-rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
-activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
-activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
-actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
-web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
-rack (2.0.4) lib/rack/method_override.rb:22:in `call'
-rack (2.0.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
-rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
-railties (5.1.5) lib/rails/engine.rb:522:in `call'
-puma (3.11.3) lib/puma/configuration.rb:225:in `call'
-puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
-puma (3.11.3) lib/puma/server.rb:438:in `process_client'
-puma (3.11.3) lib/puma/server.rb:302:in `block in run'
-puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 17:56:54 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.2ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (32.8ms)
-Completed 200 OK in 3809ms (Views: 134.3ms | ActiveRecord: 8.4ms)
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_74452104'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 03:28:01 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 516ms (Views: 515.3ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 17:57:04 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"userName"=>"John Doe", "favoriteFlavor"=>"Mint"}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 652ms (ActiveRecord: 0.0ms)
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:28:04 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (286.0ms)
+Completed 500 Internal Server Error in 552ms (ActiveRecord: 0.0ms)
 
 
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:01:33 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.1ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (5.4ms)
-Completed 200 OK in 4024ms (Views: 1091.3ms | ActiveRecord: 0.3ms)
-
-
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 18:01:44 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"cueType"=>["f"], "cueLabel"=>["f"], "cueDescription"=>["f"]}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 483ms (ActiveRecord: 0.0ms)
-
-
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to AddLocationOfCueToNotes (20180402230359)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "notes" ADD "lineNum" integer[0m
-  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "notes" ADD "location" integer[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180402230359"]]
-  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:10:14 -0500
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.3ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (8.6ms)
-Completed 200 OK in 4198ms (Views: 926.2ms | ActiveRecord: 1.1ms)
-
-
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 18:10:25 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"cueType"=>["v"], "cueLabel"=>["v"], "cueDescription"=>["v"]}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 519ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:11:39 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.3ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (33.2ms)
-Completed 200 OK in 4272ms (Views: 935.7ms | ActiveRecord: 0.7ms)
-
-
-Started GET "/plays/undefined" for 127.0.0.1 at 2018-04-02 18:11:45 -0500
   
-ActionController::RoutingError (No route matches [GET] "/plays/undefined"):
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_123830292'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 03:28:05 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (474.0ms)
+Completed 200 OK in 5910ms (Views: 5908.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 03:28:24 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"sa@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sa@gmail.com"], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (64.0ms)
+Completed 401 Unauthorized in 549ms (Views: 522.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2018-04-07 03:28:29 -0500
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 478ms (Views: 477.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/passwords" for 127.0.0.1 at 2018-04-07 03:28:44 -0500
+Processing by Clearance::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Reset password"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "saconner@smu.edu"], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/create.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/create.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 506ms (Views: 475.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/session" for 127.0.0.1 at 2018-04-07 03:29:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
   
 actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -739,50 +1095,16 @@ puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.3) lib/puma/server.rb:438:in `process_client'
 puma (3.11.3) lib/puma/server.rb:302:in `block in run'
 puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/plays/undefined" for 127.0.0.1 at 2018-04-02 18:12:17 -0500
-  
-ActionController::RoutingError (No route matches [GET] "/plays/undefined"):
-  
-actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
-web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
-rack (2.0.4) lib/rack/method_override.rb:22:in `call'
-rack (2.0.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
-rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
-actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
-railties (5.1.5) lib/rails/engine.rb:522:in `call'
-puma (3.11.3) lib/puma/configuration.rb:225:in `call'
-puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
-puma (3.11.3) lib/puma/server.rb:438:in `process_client'
-puma (3.11.3) lib/puma/server.rb:302:in `block in run'
-puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:12:21 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.8ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (4.9ms)
-Completed 200 OK in 3012ms (Views: 84.3ms | ActiveRecord: 1.6ms)
+Started GET "/passwords/new" for 127.0.0.1 at 2018-04-07 03:29:16 -0500
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 450ms (Views: 449.5ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/plays/undefined" for 127.0.0.1 at 2018-04-02 18:12:26 -0500
+Started GET "/session" for 127.0.0.1 at 2018-04-07 03:29:21 -0500
   
-ActionController::RoutingError (No route matches [GET] "/plays/undefined"):
+ActionController::RoutingError (No route matches [GET] "/session"):
   
 actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -812,150 +1134,1237 @@ puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.3) lib/puma/server.rb:438:in `process_client'
 puma (3.11.3) lib/puma/server.rb:302:in `block in run'
 puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:13:25 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.1ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (5.8ms)
-Completed 200 OK in 2721ms (Views: 588.7ms | ActiveRecord: 0.4ms)
-
-
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 18:13:39 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"cueType"=>["f"], "cueLabel"=>["f"], "cueDescription"=>["f"]}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 664ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:14:14 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (14.5ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (5.1ms)
-Completed 200 OK in 4395ms (Views: 892.7ms | ActiveRecord: 15.6ms)
-
-
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 18:14:25 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"cueType"=>["d"], "cueLabel"=>["d"], "cueDescription"=>["d"]}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 840ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:15:08 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.2ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (9.4ms)
-Completed 200 OK in 8414ms (Views: 1164.6ms | ActiveRecord: 0.5ms)
-
-
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 18:15:36 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"cueType"=>["v"], "cueLabel"=>["v"], "cueDescription"=>["v"], "location"=>"17"}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 308ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:19:12 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.3ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (6.8ms)
-Completed 200 OK in 11033ms (Views: 1347.8ms | ActiveRecord: 0.6ms)
-
-
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:19:48 -0500
-Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (2.0ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
-  Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (7.4ms)
-Completed 500 Internal Server Error in 4042ms (ActiveRecord: 2.5ms)
+Started GET "/session" for 127.0.0.1 at 2018-04-07 03:29:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:29:33 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (831.0ms)
+Completed 500 Internal Server Error in 2034ms (ActiveRecord: 0.0ms)
 
 
   
-ActionView::Template::Error (SyntaxError: [stdin]:61:34: unmatched OUTDENT):
-     5:     <%= csrf_meta_tags %>
-     6: 
-     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-     9:   </head>
-    10: 
-    11:   <body>
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
   
-(execjs):7539:8
-(execjs):7545:14
-app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2513728601119791613_70274215481700'
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:20:14 -0500
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_104503440'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:34:04 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html or :body option.):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render :form => 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_104831820'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:35:10 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (29.0ms)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (You invoked render but did not give any of :partial, :template, :inline, :file, :plain, :html or :body option.):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render :form => 'form', :formats => [:html], user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_105041520'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:35:26 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (281.0ms)
+Completed 500 Internal Server Error in 545ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_116236968'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:36:37 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (270.0ms)
+Completed 500 Internal Server Error in 538ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_new, clearance/base/_new, application/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: <%= render 'new'%>
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__608549406_52441860'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:38:50 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (273.0ms)
+Completed 500 Internal Server Error in 517ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_new, clearance/base/_new, application/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: <%= render 'new'%>
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__608549406_120195852'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:39:15 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (278.0ms)
+Completed 500 Internal Server Error in 549ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__608549406_118197372'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 03:46:31 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (286.0ms)
+Completed 500 Internal Server Error in 577ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_66468360'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 04:07:41 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (16.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 1183ms (Views: 1182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:11:53 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (293.0ms)
+Completed 500 Internal Server Error in 525ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_103326600'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:13:28 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (277.0ms)
+Completed 500 Internal Server Error in 519ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/__form, clearance/base/__form, application/__form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render '_form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_106429200'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 04:14:00 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 526ms (Views: 525.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:15:00 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (357.0ms)
+Completed 500 Internal Server Error in 623ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render partial: 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_122464524'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:16:48 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (278.0ms)
+Completed 500 Internal Server Error in 536ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render partial: 'form' %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_119400600'
+Started GET "/users/new" for 127.0.0.1 at 2018-04-07 04:17:49 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (330.0ms)
+  Rendered users/new.html.erb within layouts/application (359.0ms)
+Completed 500 Internal Server Error in 551ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x90b3310>:0x90b1078>
+Did you mean?  @user):
+    1: <%= form_with(model: user, local: true) do |form| %>
+    2:   <% if user.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
+app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___943099806_63964320'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_75865788'
+Started GET "/views/users/new" for 127.0.0.1 at 2018-04-07 04:18:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/views/users/new"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 04:25:25 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 564ms (Views: 563.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2018-04-07 04:25:29 -0500
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 427ms (Views: 426.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:40:49 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (273.0ms)
+Completed 500 Internal Server Error in 532ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render partial: 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_101217900'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:41:31 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:41:54 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:47:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:48:12 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (301.0ms)
+Completed 500 Internal Server Error in 554ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_form, clearance/base/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render partial: 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_115674204'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:52:01 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 275ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: 'form', user: @user );@outpu...
+...                               ^
+C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+...buffer.append=( render: 'form', user: @user );@output_buffer...
+...                               ^):
+  
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:52:30 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: ('form'), user: @user );@out...
+...                               ^
+C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+...ffer.append=( render: ('form'), user: @user );@output_buffer...
+...                               ^):
+  
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:52:49 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: ('form') user: @user );@outp...
+...                               ^
+C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting ')'
+...append=( render: ('form') user: @user );@output_buffer.safe_...
+...                               ^):
+  
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL, expecting ')'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:53:21 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (278.0ms)
+Completed 500 Internal Server Error in 518ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial clearance/users/_show, clearance/base/_show, application/_show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render 'show', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_75599628'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:54:13 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (114.0ms)
+Completed 500 Internal Server Error in 371ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing template /form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render template: 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_111645792'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:54:51 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (116.0ms)
+Completed 500 Internal Server Error in 361ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing template /form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render template: 'form', user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_116989956'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:55:20 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendering login/index.html.erb
+  Rendered login/index.html.erb (7.0ms)
+  Rendered users/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 475ms (Views: 474.1ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/login.scss"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:55:41 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (117.0ms)
+Completed 500 Internal Server Error in 360ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing template user/form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render template: "user/form" %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_105259512'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:55:54 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (185.0ms)
+Completed 500 Internal Server Error in 431ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing template users/form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render template: "users/form" %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_113729844'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:56:09 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendering users/_form.html.erb
+  Rendered users/_form.html.erb (387.0ms)
+  Rendered users/new.html.erb within layouts/application (419.0ms)
+Completed 500 Internal Server Error in 669ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0xdf46340>:0xe529960>
+Did you mean?  @user):
+    1: <%= form_with(model: user, local: true) do |form| %>
+    2:   <% if user.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
+app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___943099806_119934024'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_120145548'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:56:44 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendering users/_form.html.erb
+  Rendered users/_form.html.erb (389.0ms)
+  Rendered users/new.html.erb within layouts/application (420.0ms)
+Completed 500 Internal Server Error in 650ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0xdf46340>:0xdc99e30>
+Did you mean?  @user):
+    1: <%= form_with(model: user, local: true) do |form| %>
+    2:   <% if user.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
+app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___943099806_119221980'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_115656504'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:57:14 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendering users/_form.html.erb
+  Rendered users/_form.html.erb (383.0ms)
+  Rendered users/new.html.erb within layouts/application (415.0ms)
+Completed 500 Internal Server Error in 655ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0xdf46340>:0xd9d3748>
+Did you mean?  @user):
+    1: <%= form_with(model: user, local: true) do |form| %>
+    2:   <% if user.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
+app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___943099806_108190416'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_114201708'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:57:27 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (131.0ms)
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial users/__form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Sterling/Desktop/StageRight-master/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views"
+  * "C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/pdfjs_viewer-rails-0.2.0/app/views"
+):
+    1: <h1>New User</h1>
+    2: 
+    3: <%= render  "users/_form", user: @user %>
+    4: 
+    5: <%= link_to 'Back', users_path %>
+  
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___590927901_117989292'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:57:47 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 274ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+...@output_buffer.append=( render:  "users/_form", user: @user ...
+...                               ^
+C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+...ppend=( render:  "users/_form", user: @user );@output_buffer...
+...                               ^):
+  
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:58:25 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+...@output_buffer.append=( render:  'users/form', user: @user )...
+...                               ^
+C:/Users/Sterling/Desktop/StageRight-master/app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+...append=( render:  'users/form', user: @user );@output_buffer...
+...                               ^):
+  
+app/views/users/new.html.erb:3: syntax error, unexpected tLABEL
+app/views/users/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 04:58:47 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (15.0ms)
+  Rendered users/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 472ms (Views: 471.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-04-07 04:59:17 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sacnnr@gmail.com", "username"=>"sterling757", "password"=>"[FILTERED]", "first_name"=>"sterling", "last_name"=>"conner", "phone"=>"8587748499"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sacnnr@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "first_name", "last_name", "phone", "created_at", "updated_at", "encrypted_password", "remember_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "sacnnr@gmail.com"], ["username", "sterling757"], ["first_name", "sterling"], ["last_name", "conner"], ["phone", "8587748499"], ["created_at", "2018-04-07 09:59:17.371554"], ["updated_at", "2018-04-07 09:59:17.371554"], ["encrypted_password", "$2a$10$pvskOj0KETt8iUEUEpY1DuW1nRdf.TonMt2u56mWR/jG2s1tT3dLS"], ["remember_token", "f23e116586c57b3c1b17930c37604f9641c3e1ba"]]
+  [1m[35m (139.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 311ms (ActiveRecord: 141.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-04-07 04:59:17 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 376ms (Views: 318.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 04:59:24 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 506ms (Views: 505.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 04:59:33 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"sacnnr@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sacnnr@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 75ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 04:59:33 -0500
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "f23e116586c57b3c1b17930c37604f9641c3e1ba"], ["LIMIT", 1]]
+Completed 200 OK in 358ms (Views: 330.6ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/login.scss"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/sign_out" for 127.0.0.1 at 2018-04-07 04:59:54 -0500
+Processing by Clearance::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "f23e116586c57b3c1b17930c37604f9641c3e1ba"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[33mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_token", "6581865d91feec1068c5cf0ca7a9f16226badc7e"], ["updated_at", "2018-04-07 09:59:54.756017"], ["id", 2]]
+  [1m[35m (182.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 202ms (ActiveRecord: 186.2ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 04:59:54 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 537ms (Views: 536.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 05:00:41 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 516ms (Views: 515.7ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 05:00:49 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"sacnnr@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sacnnr@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 91ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 05:00:49 -0500
 Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.3ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (4.6ms)
-Completed 200 OK in 5110ms (Views: 1086.8ms | ActiveRecord: 0.6ms)
+  Rendered plays/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "6581865d91feec1068c5cf0ca7a9f16226badc7e"], ["LIMIT", 1]]
+Completed 200 OK in 715ms (Views: 317.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:20:41 -0500
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 05:01:13 -0500
+Processing by Clearance::SessionsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "6581865d91feec1068c5cf0ca7a9f16226badc7e"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_signed_in_users rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 05:01:13 -0500
 Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.2ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (17.6ms)
-Completed 200 OK in 4609ms (Views: 1045.5ms | ActiveRecord: 0.5ms)
+  Rendered plays/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "6581865d91feec1068c5cf0ca7a9f16226badc7e"], ["LIMIT", 1]]
+Completed 200 OK in 618ms (Views: 333.8ms | ActiveRecord: 1.0ms)
 
 
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 18:20:57 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"cueType"=>["f"], "cueLabel"=>["f"], "cueDescription"=>["f"], "location"=>"14"}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 387ms (ActiveRecord: 0.0ms)
+Started DELETE "/sign_out" for 127.0.0.1 at 2018-04-07 05:01:34 -0500
+Processing by Clearance::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "6581865d91feec1068c5cf0ca7a9f16226badc7e"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["updated_at", "2018-04-07 10:01:34.595650"], ["id", 2]]
+  [1m[35m (187.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 204ms (ActiveRecord: 190.8ms)
 
 
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:21:32 -0500
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 05:01:34 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 497ms (Views: 496.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 05:01:38 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 566ms (Views: 565.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 05:02:38 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"sacnnr@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sacnnr@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 70ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 05:02:38 -0500
 Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.2ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (9.9ms)
-Completed 200 OK in 3703ms (Views: 702.6ms | ActiveRecord: 0.4ms)
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Completed 200 OK in 590ms (Views: 329.0ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:25:30 -0500
+Started GET "/" for 127.0.0.1 at 2018-04-07 15:17:37 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.2ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (5.1ms)
-Completed 200 OK in 3973ms (Views: 765.2ms | ActiveRecord: 0.4ms)
+  Rendered plays/index.html.erb within layouts/application (1823.4ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Completed 200 OK in 3833ms (Views: 3505.6ms | ActiveRecord: 1.0ms)
 
 
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:25:58 -0500
+Started GET "/" for 127.0.0.1 at 2018-04-07 15:18:47 -0500
 Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (4.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.4ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (4.8ms)
-Completed 200 OK in 4342ms (Views: 762.5ms | ActiveRecord: 4.6ms)
+  Rendered plays/index.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Completed 200 OK in 724ms (Views: 399.6ms | ActiveRecord: 1.0ms)
 
 
-Started GET "/plays/index" for 127.0.0.1 at 2018-04-02 18:27:05 -0500
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:19:01 -0500
+Processing by Clearance::SessionsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_signed_in_users rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 15:19:01 -0500
 Processing by PlaysController#index as HTML
-  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
-  [1m[36mScript Load (0.2ms)[0m  [1m[34mSELECT "scripts".* FROM "scripts" WHERE "scripts"."user_id" = ?[0m  [["user_id", 1]]
   Rendering plays/index.html.erb within layouts/application
-  Rendered plays/index.html.erb within layouts/application (5.1ms)
-Completed 200 OK in 4021ms (Views: 940.4ms | ActiveRecord: 0.5ms)
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Completed 200 OK in 694ms (Views: 390.6ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/plays/cuesDB" for 127.0.0.1 at 2018-04-02 18:27:26 -0500
-Processing by PlaysController#cuesDB as */*
-  Parameters: {"cueType"=>["f"], "cueLabel"=>["f"], "cueDescription"=>["f"], "location"=>"12", "cueLineNum"=>"5"}
-No template found for PlaysController#cuesDB, rendering head :no_content
-Completed 204 No Content in 357ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2018-04-07 15:19:12 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Completed 200 OK in 822ms (Views: 486.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:19:21 -0500
+Processing by Clearance::SessionsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_signed_in_users rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 15:19:21 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+Completed 200 OK in 686ms (Views: 366.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/sign_out" for 127.0.0.1 at 2018-04-07 15:20:22 -0500
+Processing by Clearance::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "052f9d8a744abd03fb119b2d59cecf4bf7b46d82"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_token", "4eb4f6c14a6756117f56ee34118424a4f1a1e46e"], ["updated_at", "2018-04-07 20:20:22.344291"], ["id", 2]]
+  [1m[35m (138.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 207ms (ActiveRecord: 141.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:20:22 -0500
+Processing by Clearance::SessionsController#new as HTML
+Started DELETE "/sign_out" for 127.0.0.1 at 2018-04-07 15:20:22 -0500
+Processing by Clearance::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:20:22 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (144.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (110.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (521.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (805.5ms)
+Completed 200 OK in 1285ms (Views: 1284.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1645ms (Views: 1643.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 15:20:47 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (15.0ms)
+  Rendered users/new.html.erb within layouts/application (183.8ms)
+Completed 200 OK in 760ms (Views: 757.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-07 15:20:51 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 414ms (Views: 354.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:21:00 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 711ms (Views: 709.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 15:21:03 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 601ms (Views: 599.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-07 15:21:06 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 465ms (Views: 426.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:21:08 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 785ms (Views: 783.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 15:21:18 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"sterling@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sterling@gmail.com"], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (70.0ms)
+Completed 401 Unauthorized in 646ms (Views: 601.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2018-04-07 15:21:22 -0500
+Processing by Clearance::UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 481ms (Views: 479.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-04-07 15:21:43 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sterling@gmail.com", "username"=>"sterling", "password"=>"[FILTERED]", "first_name"=>"sterling", "last_name"=>"conner", "phone"=>"8765678"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sterling@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (14.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "first_name", "last_name", "phone", "created_at", "updated_at", "encrypted_password", "remember_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "sterling@gmail.com"], ["username", "sterling"], ["first_name", "sterling"], ["last_name", "conner"], ["phone", "8765678"], ["created_at", "2018-04-07 20:21:43.209691"], ["updated_at", "2018-04-07 20:21:43.209691"], ["encrypted_password", "$2a$10$YFpwVa/XHMsV41PpB3HFGeQoH1uOARf5WFmE..0eK8dO0GMbpNo.G"], ["remember_token", "25f53435425d59369a1a356dbd7f8beded912203"]]
+  [1m[35m (117.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 313ms (ActiveRecord: 132.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-04-07 15:21:43 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 403ms (Views: 352.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-07 15:21:49 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 370ms (Views: 334.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:21:51 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 587ms (Views: 586.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 15:21:59 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"sterling@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sterling@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 95ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 15:22:00 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "25f53435425d59369a1a356dbd7f8beded912203"], ["LIMIT", 1]]
+Completed 200 OK in 699ms (Views: 398.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2018-04-07 15:22:09 -0500
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "25f53435425d59369a1a356dbd7f8beded912203"], ["LIMIT", 1]]
+Completed 200 OK in 641ms (Views: 641.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/sign_out" for 127.0.0.1 at 2018-04-07 15:22:26 -0500
+Processing by Clearance::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["remember_token", "25f53435425d59369a1a356dbd7f8beded912203"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[33mUPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_token", "c801a999e3879b6462b6be5f99c1793d5a2c10cc"], ["updated_at", "2018-04-07 20:22:26.573569"], ["id", 3]]
+  [1m[35m (129.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 159ms (ActiveRecord: 133.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:22:26 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 588ms (Views: 586.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 15:22:41 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (71.0ms)
+Completed 401 Unauthorized in 629ms (Views: 574.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 15:22:46 -0500
+Processing by PlaysController#index as HTML
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 685ms (Views: 355.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-04-07 15:22:51 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 396ms (Views: 349.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-04-07 15:22:56 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 401ms (Views: 361.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2018-04-07 15:23:24 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (120.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 134ms (ActiveRecord: 122.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-07 15:23:25 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 470ms (Views: 432.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-07 15:23:28 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 613ms (Views: 612.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-07 15:23:34 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"sterling@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sterling@gmail.com"], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (100.0ms)
+Completed 401 Unauthorized in 606ms (Views: 598.6ms | ActiveRecord: 0.0ms)
 
 

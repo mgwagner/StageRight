@@ -37,6 +37,7 @@ gem 'pdf-reader'
 
 gem 'jquery-fileupload-rails'
 
+gem 'react-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

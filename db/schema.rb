@@ -10,16 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180402230359) do
+ActiveRecord::Schema.define(version: 20180403232331) do
 
   create_table "notes", force: :cascade do |t|
     t.integer "script_id"
     t.integer "user_id"
-    t.text "note_content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "lineNum"
     t.integer "location"
+    t.text "cueType"
+    t.text "cueLabel"
+    t.text "cueDescription"
   end
 
   create_table "scripts", force: :cascade do |t|

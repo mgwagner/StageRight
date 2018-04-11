@@ -22,6 +22,8 @@ class PlaysController < ApplicationController
         # puts page.raw_content
     	end
     	@hasText = true
+      @cues = Note.where(script_id: dbScript[0].id)
+      
     end
   end
 
@@ -42,5 +44,24 @@ class PlaysController < ApplicationController
 
   def cuesDB
     puts "something here so that we can see its actually doing something"
+    dbScript = Script.where(user_id: 1)
+    if (dbScript.empty?)
+      render json: {"Failure" => "'You have no arms or legs!' 'Its just a flesh wound'"}
+    else
+      cuesLink = Note.new(
+        user_id: 1, 
+        script_id: dbScript[0].id,
+        cueType: params[:cueType], 
+        cueLabel: params[:cueLabel], 
+        cueDescription: params[:cueDescription], 
+        location: params[:location], 
+        lineNum: params[:cueLineNum])
+      
+      if (cuesLink.save)
+        render json: cuesLink
+      else
+        render json: {"Failure" => "Failure...JK! Success! wait...no....due to budget cuts you are indeed a....Success! No, FAILURE!!!"}
+      end
+    end
   end
 end

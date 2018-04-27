@@ -15,9 +15,13 @@ ActiveRecord::Schema.define(version: 20180407075634) do
   create_table "notes", force: :cascade do |t|
     t.integer "script_id"
     t.integer "user_id"
-    t.text "note_content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "lineNum"
+    t.integer "location"
+    t.text "cueType"
+    t.text "cueLabel"
+    t.text "cueDescription"
   end
 
   create_table "scripts", force: :cascade do |t|
@@ -25,6 +29,7 @@ ActiveRecord::Schema.define(version: 20180407075634) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "filename"
   end
 
   create_table "users", force: :cascade do |t|

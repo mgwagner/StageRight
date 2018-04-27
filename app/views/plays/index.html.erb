@@ -14,9 +14,7 @@
 	   <div class="page-header text-center">
 		  <h1>Name of Project</h1>
 	   </div>
-	   <div class="clickable">
-		  <%= simple_format(@text) %>
-	   </div>
+       <%= react_component "Script", text: @text, cues: @cues %>
     <% else %>
         <div class="page-header text-center">
             <h1>New Project</h1>
@@ -39,7 +37,7 @@
     <% end %>
 </div>
 
-<div class="modal" id="Cueinput" tabindex="-1" role="dialog">
+<!-- <div class="modal" id="Cueinput" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -75,7 +73,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 

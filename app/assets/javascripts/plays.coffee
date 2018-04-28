@@ -96,3 +96,10 @@ $ ->
 			$("#CueType" + i).val(cueTypes[i-1]);
 			$("#CueLabel" + i).val(cueLabels[i-1]);
 			$("#CueDescription" + i).val(cueDescriptions[i-1]);
+
+
+
+
+
+
+

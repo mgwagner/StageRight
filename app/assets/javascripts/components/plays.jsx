@@ -42,7 +42,19 @@ class Script extends React.Component {
   handleAdd(cue){
     ReactDOM.unmountComponentAtNode(document.getElementById("Cueinput"));
     cues = this.state.cues
-    cues.push(cue);
+    indeces = []
+    for (i = 0; i < cues.length; i++){
+      if (cues[i].location === cue[0].location && cues[i].lineNum === cue[0].lineNum){
+        indeces.push(i)
+      }
+    }
+    for (ii = 0; ii < indeces.length; ii++){
+      cues.splice(indeces[ii] - ii, 1);
+    }
+    for (iii = 0; iii < cue.length; iii++){
+      cues.push(cue[iii]);
+    }
+
     this.setState({cues: cues})
   }
   render() {
@@ -50,8 +62,7 @@ class Script extends React.Component {
       {this.state.lines.map((line,i)=>
         <p key={i} className={this.findCues(i).length>0 ? "underliner" : ""} >
           {this.highlight(line, this.findCues(i)).map((text, flag)=>
-            <tag onClick = {((e) => this.clickedOnMe(e,[i,flag]))}>{text[1] ? <mark> {text} </mark> : text}</tag>
-              
+            <tag onClick = {((e) => this.clickedOnMe(e,[i,flag]))}>{text[1] ? <mark> {text} </mark> : text}</tag> 
           )} 
           {this.findCues(i).map((cue,i)=>
             <p key={i} className="cues"> {cue.cueType} {cue.cueLabel} </p>
@@ -98,16 +109,16 @@ class CueForm extends React.Component{
     }
     )
 
-    console.log("we're in too deep capin!");
+    console.log("we're in too deep capin!...thats what she said");
 
     $.ajax({
       method: 'POST',
       url: '/plays/cuesDB',
       dataType: 'JSON',
       data: {
-        cueType: cueTypes,
-        cueLabel: cueLabel,
-        cueDescription: cueDescription,
+        "cueType[]": cueTypes,
+        "cueLabel[]": cueLabel,
+        "cueDescription[]": cueDescription,
         location: this.props.wordNum,
         cueLineNum: this.props.lineNum
       },
@@ -141,7 +152,7 @@ class CueForm extends React.Component{
         <div className="modal-body">
           <div id="cueForm">
             {this.props.cues.length > 0 ?
-              this.props.cues.map((cue, i) => 
+              this.props.cues.reverse().map((cue, i) => 
               <div>
                 <h4>Cue #{i + 1} </h4>
                 <div className="form-group">
@@ -159,7 +170,6 @@ class CueForm extends React.Component{
               </div>
               ) : 
               this.state.cueCumbersIMeanNumbers.map((i) =>
-
               <div>
                 <h4>Cue #{i} </h4>
                 <div className="form-group">
@@ -190,14 +200,3 @@ class CueForm extends React.Component{
     </div>
   }
 }
-
-
-
-
-
-
-
-
-
-
-

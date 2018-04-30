@@ -5346,3 +5346,236 @@ Migrating to AddCuesInformationToNotes (20180403232331)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 17:40:58 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (7103.9ms)
+Completed 200 OK in 7634ms (Views: 7591.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 17:44:39 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 199ms (Views: 158.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 17:52:49 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 176ms (Views: 162.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 17:53:21 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 144ms (Views: 137.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 17:57:04 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 136ms (Views: 130.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 18:02:16 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 145ms (Views: 139.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-27 18:02:23 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (34.5ms)
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (67.6ms)
+Completed 200 OK in 259ms (Views: 258.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2018-04-27 18:02:29 -0500
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/passwords/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 173ms (Views: 171.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 18:02:37 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 241ms (Views: 235.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 18:04:44 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 140ms (Views: 127.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 18:05:15 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:20: syntax error, unexpected ')', expecting =>
+..., {:class => "nav-link px-2"} );@output_buffer.safe_append='...
+...                              ^
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_else, expecting ')'
+'.freeze;         else 
+                  ^~~~
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;         end 
+                  ^~~
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:20: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_else, expecting ')'
+app/views/layouts/application.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-27 18:06:03 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 185ms (Views: 165.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-27 18:07:01 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:20: syntax error, unexpected ')', expecting =>
+...e, {:class => "nav-link px-2"});@output_buffer.safe_append='...
+...                              ^
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_else, expecting ')'
+'.freeze;         else 
+                  ^~~~
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;         end 
+                  ^~~
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/MatthewGWagner/Documents/SMU_School_Documents/Computer_Science_Courses/Software_Engineering_Principles/StageRight/app/views/layouts/application.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:20: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_else, expecting ')'
+app/views/layouts/application.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-04-27 18:07:26 -0500
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 190ms (Views: 184.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-27 18:07:37 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.7ms)
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 134ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-27 18:12:42 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 178ms (Views: 156.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-27 18:12:58 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (2.6ms)
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 144ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-27 18:22:57 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (3.2ms)
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 401 Unauthorized in 228ms (Views: 222.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-27 18:23:15 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 154ms (Views: 149.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-27 18:23:26 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (23.8ms)
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 267ms (Views: 267.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-04-27 18:23:54 -0500
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"fakeemail@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fakeemail@gmail.com"], ["LIMIT", 1]]
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (1.7ms)
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 401 Unauthorized in 152ms (Views: 148.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/plays/index" for 127.0.0.1 at 2018-04-30 16:50:40 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaysController#index as HTML
+  [1m[36mScript Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "scripts" WHERE "scripts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering plays/index.html.erb within layouts/application
+  Rendered plays/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 802ms (Views: 763.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-30 16:50:46 -0500
+Processing by Clearance::SessionsController#new as HTML
+  Rendering /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/_form.html.erb (10.8ms)
+  Rendered /Users/MatthewGWagner/.rvm/gems/ruby-2.5.0/gems/clearance-1.16.1/app/views/sessions/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 140ms (Views: 136.8ms | ActiveRecord: 0.0ms)
+
+
